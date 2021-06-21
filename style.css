@@ -1,6 +1,6 @@
-body {
+html, body {
     background-color: #000;
-    flex: 1;
+    height: 100%;
     -webkit-touch-callout: none;
     /* iOS Safari */
     -webkit-user-select: none;
@@ -15,7 +15,14 @@ body {
     /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
+body {
+    margin: 0;
+}
+
 .box {
+    height: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <title>El marcianito</title>
+</head>
+
+<body>
+    <div class="box">
+        <div>
+            <span id="title" onclick="main()">CLICK ME</span>
+            <img id="alienpls" src="assets/alienpls.gif" style="display:none" onclick="stop()">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const alienpls = document.getElementById('alienpls')
+        const title =  document.getElementById('title')
+        const audio = new Audio('assets/audio.mp3')
+        audio.volume = '0.3'
+        audio.loop = true
+
+        function main() {
+            title.style.display = 'none';
+            alienpls.style.display = 'block';
+            
+            audio.play()
+        }
+
+        function stop() {
+            title.style.display = 'block';
+            alienpls.style.display = 'none';
+
+            audio.pause()
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body {
+    background-color: #000;
+    flex: 1;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+}
+
+#title {
+    color: #fff;
+    margin-top: 30px;
+    font-size: 50px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    height: 500px;
+    cursor: pointer;
+}
